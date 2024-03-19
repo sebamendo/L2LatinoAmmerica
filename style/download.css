@@ -1,0 +1,258 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)) ,url(../media/_d80c2d52-b0f1-4b52-bcc8-5a1d6d18ea52.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.offcanvas-body {
+    border: none;
+    outline: none;
+    text-align: end;
+}
+
+.offcanvas-body .nav-link {
+    font-size: 22px;
+    margin: 15px auto;
+    margin-top: 60px;
+    text-align: end;
+}
+
+.offcanvas {
+    max-width: 200px;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.text-bg-dark {
+    background: transparent !important;
+}
+
+.login {
+    margin-top: 30px;
+}
+
+.login input {
+    margin: 10px 0;
+}
+
+.login input {
+    background: rgba(3, 83, 164, 0.5);
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0 7px #0353A4;
+}
+
+.login input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.login input:focus {
+    background: #0353A4;
+    color: #fff;
+}
+
+.login button {
+    background: #001233;
+    border: none;
+    outline: none;
+}
+
+.login button:hover {
+    background: #0353A4;
+    color: #fff;
+}
+
+.section-container {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: var(--bs-bg-opacity);
+}
+
+.welcome .welcome-title {
+    font-size: 32px;
+    margin-top: 60px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.download-content {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 320px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px #0353A4,
+        -4px -4px 9px #001233;
+        background: rgba(3, 83, 164, 0.5);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.download-content .dowload-launcher,
+.download-content .download-cliente {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    font-family: var(--font-family);
+}
+
+.download-content .download-cliente {
+    width: 220px;
+    margin-bottom: 35px
+}
+
+.download-content .download-cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+.dowload-launcher h3,
+.download-cliente h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.dowload-launcher p,
+.download-cliente p {
+    font-size: 1.2rem;
+}
+
+
+.dowload-launcher a,
+.download-cliente a {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #0353A4;
+    color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.download-cliente a {
+    margin: 10px 0;
+}
+
+.dowload-launcher a:hover,
+.download-cliente a:hover {
+    background: #00215f;
+}
+
+footer {
+    margin-top: 35px;
+    text-align: center;
+}
+
+@media screen and (min-width: 380px) {
+
+    .section-container {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .offcanvas-body .nav-link {
+        font-size: 16px;
+    }
+
+    .welcome-text .to {
+        padding-bottom: 100px;
+    }
+
+    .welcome-text .welcome-title {
+        font-size: 2rem;
+        margin-top: 55px;
+    }
+
+    .download-content {
+        width: 370px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hide-on-large {
+        display: none;
+    }
+
+    .offcanvas-body {
+        position: fixed;
+        display: flex;
+        top: 30px;
+        left: 30px;
+    }
+
+    .offcanvas-body .nav-link {
+        margin: 0 15px;
+    }
+
+    .offcanvas-body .nav-link:hover {
+        color: #0353A4;
+        transform: scale(1.02);
+        transition: .4s;
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    .login {
+        position: fixed;
+        top: 0;
+        right: 30px;
+    }
+
+
+
+}

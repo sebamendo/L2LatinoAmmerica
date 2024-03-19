@@ -1,0 +1,345 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)) ,url(../media/_d80c2d52-b0f1-4b52-bcc8-5a1d6d18ea52.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.offcanvas-body {
+    border: none;
+    outline: none;
+    text-align: end;
+}
+
+.offcanvas-body .nav-link {
+    font-size: 22px;
+    margin: 15px auto;
+    margin-top: 60px;
+    text-align: end;
+}
+
+.offcanvas {
+    max-width: 200px;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.text-bg-dark {
+    background: transparent !important;
+}
+
+.login {
+    margin-top: 30px;
+}
+
+.login input {
+    margin: 10px 0;
+}
+
+.login input {
+    background: rgba(3, 83, 164, 0.5);
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0 7px #0353A4;
+}
+
+.login input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.login input:focus {
+    background: #0353A4;
+    color: #fff;
+}
+
+.login button {
+    background: #001233;
+    border: none;
+    outline: none;
+}
+
+.login button:hover {
+    background: #0353A4;
+    color: #fff;
+}
+
+.section-container {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--bs-bg-opacity);
+}
+
+
+
+.welcome .welcome-title {
+    font-size: 32px;
+    margin-top: 60px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.donation-info {
+    width: 320px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border: 1px solid transparent;
+    background: rgba(3, 83, 164, 0.5);
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 15px #0353A4;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.donation-info p {
+    margin: auto;
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+.donation-info p a {
+    text-decoration: none;
+    color: #fff;
+    animation: titleRGB 3s ease-in-out infinite;
+    -webkit-animation: titleRGB 3s ease-in-out infinite;
+}
+
+@keyframes titleRGB {
+    0% {
+        color: #fff;
+    }
+
+    50% {
+        color: #0353A4;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+.donation-content {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-top: 35px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.donation-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    height: 330px;
+    margin: 10px auto;
+    background: rgba(207, 184, 184, 0.292);
+    border-radius: 10px;
+    animation: shadowRGB 3s ease-in-out infinite;
+    -webkit-animation: shadowRGB 3s ease-in-out infinite;
+}
+
+@keyframes shadowRGB {
+    0% {
+        box-shadow: 4px 4px 9px #0466C8,
+            -4px -4px 9px #002855;
+    }
+
+    50% {
+        box-shadow: 4px 4px 9px #002855,
+            -4px -4px 9px #0466C8;
+    }
+
+    100% {
+        box-shadow: 4px 4px 9px #0466C8,
+            -4px -4px 9px #002855;
+    }
+}
+
+
+
+.donation-card img {
+    width: 95px;
+    transform: translateY(-25px);
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.8));
+    -webkit-filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.8));
+}
+
+.donation-card .donation-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.donation-card .separator {
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.donation-card .donation-price {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: green;
+}
+
+.donation-card .donation-btn {
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+    background: #0466C8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px rgba(48, 46, 46, 0.3),
+        -4px -4px 9px rgba(48, 46, 46, 0.3);
+}
+
+.donation-card .donation-btn:hover {
+    background: #023E7D;
+    transform: scale(1.1);
+    transition: .4s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.donation-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+footer {
+    bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 380px) {
+
+    .section-container {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .offcanvas-body .nav-link {
+        font-size: 16px;
+    }
+
+    .welcome-text .welcome-title {
+        font-size: 2rem;
+        margin-top: 55px;
+    }
+
+    .donation-info{
+        width: 550px;
+    }
+
+    .donation-content {
+        margin-top: 200px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .hide-on-large {
+        display: none;
+    }
+
+    .offcanvas-body {
+        position: fixed;
+        display: flex;
+        top: 30px;
+        left: 30px;
+    }
+
+    .offcanvas-body .nav-link {
+        margin: 0 15px;
+    }
+
+    .offcanvas-body .nav-link:hover {
+        color: #0353A4;
+        transform: scale(1.02);
+        transition: .4s;
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    .login {
+        position: fixed;
+        top: 0;
+        right: 30px;
+    }
+
+    .donation-content {
+        grid-template-columns: repeat(3, 2fr);
+        gap: 20px;
+    }
+
+    .donation-card {
+        width: 260px;
+        height: 310px;
+        gap: 0;
+    }
+
+
+
+}
