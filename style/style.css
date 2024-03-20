@@ -8,8 +8,8 @@ body {
     height: 100%;
     color: #fff;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)) ,url(../media/_d80c2d52-b0f1-4b52-bcc8-5a1d6d18ea52.jpg);
-    background-position: center;
+    rgba(0, 0, 0, 0.3)) ,url(../media/bg-three.gif);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
